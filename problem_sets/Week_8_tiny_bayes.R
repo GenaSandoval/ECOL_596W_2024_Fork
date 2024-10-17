@@ -3,8 +3,8 @@
 
 # What proportion p of a planet's surface is water?
 # Toss a globe 12 times, what do you find?
-water <- 7
-land <- 5
+water <- 5
+land <- 4
 total_toss <- water + land
 
 
@@ -30,7 +30,7 @@ plot(likelihoods ~ ps, data = p_grid, pch = 19)
 p_grid$prior <- p_grid$likelihoods
 
 # Now we toss the globe 14 more times
-water2 <- 10
+water2 <- 7
 land2 <- 4
 total_toss2 <- water2 + land2
 

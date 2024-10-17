@@ -36,3 +36,10 @@ p_value <- 1 - pt(t_value, df)
 p_value
 print(p_value)
 ###Super small p-value meaning we can reject the null hypothesis, since the dead lizards have significantly shorter horns than the living lizards
+
+##check to see if p-value is reasonable
+boxplot(squamosalHornLength~Survival, data=lizards_clean)
+###in class
+t.test(living,killed,var.equal=TRUE,alternative="greater")
+t
+
